@@ -1,0 +1,30 @@
+﻿<Window x:Class="WpfApp2.visualizacja.wpf_2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2.visualizacja"
+        mc:Ignorable="d"
+        Title="wpf_2" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Border Background="Red" Grid.Column="0" Grid.Row="0"></Border>
+        <Border Background="Blue" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2"></Border>
+        <Border Background="Yellow" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3"></Border>
+        <Border Background="Green" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="4"></Border>
+        <Border Background="Blue" Grid.Column="1" Grid.Row="0" ></Border>
+        <Border Background="Yellow" Grid.Column="2" Grid.Row="0" Grid.RowSpan="2" ></Border>
+        <Border Background="Green" Grid.Column="3" Grid.Row="0" Grid.RowSpan="3" ></Border>
+    </Grid>
+</Window>
